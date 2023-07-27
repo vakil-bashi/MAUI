@@ -6,34 +6,176 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
+            Spacing="20"
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <Grid ColumnDefinitions="*, 1.1*" >
+                <ImageButton
+                    Grid.Column="0"
+                    Source="vakilbashi.png"
+                    Aspect="AspectFit"
+                    Clicked="Logo_Clicked"/>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                <ImageButton
+                    Grid.Column="1"
+                    Source="menu.png"
+                    Aspect="AspectFit"
+                    Padding="15"
+                    HorizontalOptions="End"
+                    VerticalOptions="CenterAndExpand"
+                    />
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            </Grid>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+
+            <Frame Padding="0" BorderColor="#EFEFEF" BackgroundColor="#F8F8F8" HeightRequest="60">
+              <Grid ColumnDefinitions="6*, *" BackgroundColor="Transparent">
+                <Entry
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Placeholder="لطفا موضوع مورد نظر را وارد کنید..."
+                    HorizontalTextAlignment="Center"
+                    FontFamily="yekan-R.ttf"
+                    FontAttributes="Bold"
+                />
+                <ImageButton Grid.Column="1"
+                             Source="search.png"
+                             Aspect="AspectFit"
+                             Margin="10"
+                             BackgroundColor="Transparent"
+                             />
+              </Grid>
+
+            </Frame>
+
+            <Frame  Padding="5" HeightRequest="200" CornerRadius="15" BackgroundColor="#F8F8F8">
+
+                <Grid RowDefinitions="*, *, 2*" ColumnDefinitions="*, 7*, 2*" >
+
+                    <Image Grid.Column="0"
+                           Grid.Row="2"
+                           Source="glossy.png"
+                           Aspect="AspectFit"
+                           VerticalOptions="End"
+                           Margin="5, 0, -5, 0"/>
+
+                    <Label Grid.Column="1"
+                           Grid.RowSpan="3"
+                           Text="انتخاب بهترین وکیل از &#10;بین متخصصین حوزه وکالت."
+                           FontSize="Large"
+                           FontFamily="yekan-R.ttf"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center">
+                    </Label>
+             
+                    <Image Grid.Column="2"
+                           Grid.Row="0"
+                           Grid.RowSpan="2"
+                           Source="certificate.png"
+                           Aspect="AspectFit"/>
+
+                </Grid>
+
+
+            </Frame>
+
+            <Label Text="پکیج های آموزشی وکیل‌باشی"
+                   TextColor="#001334"
+                   FontAttributes="Bold"
+                   FontFamily="yekan-R.ttf"
+                   CharacterSpacing="2"
+                   HorizontalTextAlignment="End"
+                   FontSize="Header"/>
+
+            <Grid ColumnDefinitions="*, *, *" RowDefinitions="*, *" RowSpacing="20" ColumnSpacing="20">
+
+                <Grid Grid.Row="0" Grid.Column="0" RowDefinitions="1.3*, *" Padding="5">
+                    <Image Grid.Row="0" Source="customize.png" Aspect="AspectFit"></Image>
+                    <Label Grid.Row="1" Text="خدمات پیشرفته" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="1" RowDefinitions="1.3*, *" Padding="5">
+
+                    <Image Grid.Row="0" Source="forms.png" Aspect="AspectFit"></Image>
+                    <Label Grid.Row="1" Text="فرم های قضائی" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="2" RowDefinitions="1.3*, *" Padding="5">
+                    <Grid.GestureRecognizers>
+                         <TapGestureRecognizer Tapped="Light_System" />
+
+                    </Grid.GestureRecognizers>
+                   <Image Grid.Row="0" Source="light.png" Aspect="AspectFit"></Image>
+                    <Label Grid.Row="1" Text="سامانه چراغ" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="0" RowDefinitions="1.3*, *" Padding="5">
+
+                    <Image Grid.Row="0" Source="chat.png" Aspect="AspectFit"></Image>
+                    <Label Grid.Row="1" Text="مشاوره آنلاین" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" RowDefinitions="1.3*, *" Padding="5">
+
+                  <Image Grid.Row="0" Source="videos.png" Aspect="AspectFit"></Image>
+                    <Label Grid.Row="1" Text="آموزش های تصویری" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="2" RowDefinitions="1.3*, *" Padding="5">
+
+                   <Image Grid.Row="0" Source="contracts.png" Aspect="AspectFit"></Image>
+                    <Label Grid.Row="1" Text="قرارداد ها" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                </Grid>
+
+
+            </Grid>
+
+            <Label Text="چراغ"
+                   FontAttributes="Bold"
+                   FontSize="Header"
+                   TextColor="#739A20"
+                   FontFamily="yekan-R.ttf"
+                   HorizontalTextAlignment="End"/>
+
+            <Label Text="بهترین پاسخ‌های حقوقی را از  چراغ دریافت کنید."
+                   FontAttributes="Bold"
+                   FontSize="Body"
+                   TextColor="#001334"
+                   FontFamily="yekan-R.ttf"
+                   HorizontalTextAlignment="End"
+                   TextType="Html"
+            />
+
+
+            <Image
+                Margin="0, -100, 0, 0"
+                Source="contract1.png"
+                Aspect="AspectFit"
+                />
+
+            <Label Text="،تسا کیفارگسارد هس و تصش رد یدایز یاهباتک ،دشاب یم
+هک نانچنآرطس و نوتس رد هلجم و همانزور هکلب نوتم و اهرگپاچ
+اس نتم موسپیا مرولو ،تسا مزال"
+
+                   MaxLines="3"
+                   FontSize="Caption"
+                   TextColor="#50505299"
+                   FontFamily="yekan-R.ttf"
+                   HorizontalTextAlignment="End"
+                   />
+
+            <Grid ColumnDefinitions="*, *, *" >
+
+                <Button Grid.Column="2"
+                        Text="بیشتر بدانید"
+                        FontFamily="yekan-R.ttf"
+                        BackgroundColor="#414F91"
+                        />
+
+            </Grid>
 
         </VerticalStackLayout>
     </ScrollView>

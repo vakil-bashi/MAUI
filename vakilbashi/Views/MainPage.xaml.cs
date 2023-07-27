@@ -2,7 +2,6 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
 	public MainPage()
 	{
@@ -11,17 +10,24 @@ public partial class MainPage : ContentPage
 
     }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    private async void Logo_Clicked(System.Object sender, System.EventArgs e)
+    {
+        try
+        {
+            Uri uri = new Uri("https://www.vakilbashi.org");
+            await Browser.Default.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
+        }
+        catch (Exception ex)
+        {
+            // An unexpected error occurred. No browser may be installed on the device.
+            Console.WriteLine(ex);
+        }
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    private async void Light_System(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new Views.Products.Light());
+    }
 }
 
 

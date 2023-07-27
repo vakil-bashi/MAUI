@@ -57,8 +57,42 @@
 
 	<ItemGroup>
 	  <None Remove="Views\" />
+	  <None Remove="Resources\Images\search.png" />
+	  <None Remove="Resources\Images\certificate.png" />
+	  <None Remove="Resources\Images\glossy.png" />
+	  <None Remove="Resources\Fonts\yekan-regular.ttf" />
+	  <None Remove="Resources\Images\vakilbashi.png" />
+	  <None Remove="Resources\Images\light.png" />
+	  <None Remove="Resources\Images\chat.png" />
+	  <None Remove="Resources\Images\contracts.png" />
+	  <None Remove="Resources\Images\customize.png" />
+	  <None Remove="Resources\Images\forms.png" />
+	  <None Remove="Resources\Images\vidoes.png" />
+	  <None Remove="Resources\Images\videos.png" />
+	  <None Remove="Resources\Images\contract1.png" />
+	  <None Remove="Resources\Images\image2.png" />
+	  <None Remove="Views\Products\" />
+	  <None Remove="Resources\Images\menu.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
+	  <Folder Include="Views\Products\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\search.png" />
+	  <BundleResource Include="Resources\Images\certificate.png" />
+	  <BundleResource Include="Resources\Images\glossy.png" />
+	  <BundleResource Include="Resources\Fonts\yekan-R.ttf" />
+	  <BundleResource Include="Resources\Images\vakilbashi.png" />
+	  <BundleResource Include="Resources\Images\light.png" />
+	  <BundleResource Include="Resources\Images\chat.png" />
+	  <BundleResource Include="Resources\Images\contracts.png" />
+	  <BundleResource Include="Resources\Images\customize.png" />
+	  <BundleResource Include="Resources\Images\forms.png" />
+	  <BundleResource Include="Resources\Images\vidoes.png" />
+	  <BundleResource Include="Resources\Images\videos.png" />
+	  <BundleResource Include="Resources\Images\contract1.png" />
+	  <BundleResource Include="Resources\Images\image2.png" />
+	  <BundleResource Include="Resources\Images\menu.png" />
 	</ItemGroup>
 </Project>
