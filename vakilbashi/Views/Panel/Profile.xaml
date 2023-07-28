@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="vakilbashi.Views.Panel.Profile"
+             BackgroundColor="#FBFCFF">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="*, 3*, *">
+                <ImageButton Grid.Column="0" Source="notification.png" Aspect="AspectFit" Margin="20" />
+                <ImageButton Grid.Column="1" Source="vakilbashi.png" Aspect="AspectFit" HorizontalOptions="End" HeightRequest="50" WidthRequest="130" Clicked="vakilbashi_Clicked"/>
+                <ImageButton Grid.Column="2" Source="back.png" Aspect="AspectFit" Margin="20" Clicked="back_Clicked"/>
+
+            </Grid>
+            <Frame Grid.Row="0" BackgroundColor="#FBFCFF" HasShadow="False">
+                <VerticalStackLayout>
+                    <ImageButton WidthRequest="120"
+                            HeightRequest="120"
+                            CornerRadius="60" 
+                            BackgroundColor="#F7D3BA"
+                            Source="avatar.png"
+                            Aspect="AspectFit"
+                            > 
+                   
+                    </ImageButton>
+
+                    <Grid ColumnDefinitions="7*, *">
+                        <Image
+                                Grid.Column="1"
+                                Margin="5"
+                                Source="iconuser.png"
+                                Aspect="AspectFit"/>
+                        <Label
+                               Grid.Column="0"
+                               Text="نام و نام‌خانوادگی (فارسی)"
+                               FontFamily="yekan-R"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="End"/>
+
+                    </Grid>
+                    <Entry
+                           Placeholder="سبحان شفیعی"
+                           FontFamily="yekan-R"
+                           HorizontalTextAlignment="End"/>
+
+
+                    <Grid ColumnDefinitions="7*, *">
+                        <Image
+                                Grid.Column="1"
+                                Margin="5"
+                                Source="iconmobile.png"
+                                Aspect="AspectFit"/>
+                        <Label
+                               Grid.Column="0"
+                               Text="شماره موبایل"
+                               FontFamily="yekan-R"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="End"/>
+
+                    </Grid>
+                    <Entry Placeholder="09022802826"
+                           FontFamily="yekan-R"
+                           HorizontalTextAlignment="End"/>
+
+
+                    <Grid ColumnDefinitions="7*, *">
+                        <Image
+                                Grid.Column="1"
+                                Margin="5"
+                                Source="iconuser.png"
+                                Aspect="AspectFit"/>
+                        <Label
+                                Grid.Column="0"
+                                Text="درباره من"
+                                FontFamily="yekan-R"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="End"/>
+
+                    </Grid>
+                    <Entry Placeholder="اینجا بنویسید..."
+                            FontFamily="yekan-R"
+                            VerticalTextAlignment="Start"
+                            HorizontalTextAlignment="End"
+                            HeightRequest="100"/>
+
+
+                    <Grid ColumnDefinitions="7*, *">
+                        <Image Grid.Column="1"
+                               Aspect="AspectFit"
+                               Margin="5"
+                               Source="iconprofile.png"/>
+                        <Label
+                               Grid.Column="0"
+                               Text="آدرس پروفایل"
+                               FontFamily="yekan-R"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="End"/>
+
+                    </Grid>
+
+                    <Grid ColumnDefinitions="1.5*, 0.5*, 6*" HeightRequest="60">
+                        <Frame
+                            Grid.Column="0"
+                            Padding="5"
+                            BackgroundColor="#F4F7FF"
+                            CornerRadius="16">
+                                <Image Source="copy.png"
+                                       Aspect="AspectFit"
+                                       Margin="10"/>
+
+                        </Frame>
+                        <Entry Grid.Column="2" 
+                               Placeholder="vakilbashi.com/soshika"
+                               HorizontalTextAlignment="Center"
+                               IsReadOnly="True"
+                               />
+
+
+                    </Grid>
+
+
+                </VerticalStackLayout>
+
+            </Frame>
+            <Button Grid.Row="1"
+                Margin="20, 0"
+                Text="ذخیره"
+                CornerRadius="16"
+                FontFamily="yekan-R"
+                FontSize="Medium"
+                HeightRequest="60"
+                BackgroundColor="#414F91"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+
+
+ 
+</ContentPage>

@@ -1,16 +1,17 @@
-﻿namespace vakilbashi;
+﻿namespace vakilbashi.Views.Panel;
 
-public partial class MainPage : ContentPage
+public partial class Profile : ContentPage
 {
-
-	public MainPage()
+	public Profile()
 	{
 		InitializeComponent();
+
 		NavigationPage.SetHasNavigationBar(this, false);
+
 
     }
 
-    private async void Logo_Clicked(System.Object sender, System.EventArgs e)
+    private async void vakilbashi_Clicked(System.Object sender, System.EventArgs e)
     {
         try
         {
@@ -24,11 +25,8 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private async void Light_System(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
+    private async void back_Clicked(System.Object sender, System.EventArgs e)
     {
-        //await Navigation.PushAsync(new Views.Products.Light());
-        await Navigation.PushAsync(new Views.Panel.Profile());
+        await Navigation.PopAsync();
     }
 }
-
-

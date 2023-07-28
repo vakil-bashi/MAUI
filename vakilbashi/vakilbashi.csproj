@@ -73,10 +73,19 @@
 	  <None Remove="Resources\Images\image2.png" />
 	  <None Remove="Views\Products\" />
 	  <None Remove="Resources\Images\menu.png" />
+	  <None Remove="Views\Panel\" />
+	  <None Remove="Resources\Images\avatar.png" />
+	  <None Remove="Resources\Images\iconuser.png" />
+	  <None Remove="Resources\Images\iconmobile.png" />
+	  <None Remove="Resources\Images\iconprofile.png" />
+	  <None Remove="Resources\Images\copy.png" />
+	  <None Remove="Resources\Images\arrow-right.png" />
+	  <None Remove="Resources\Images\notification.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="Views\Products\" />
+	  <Folder Include="Views\Panel\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\search.png" />
@@ -94,5 +103,12 @@
 	  <BundleResource Include="Resources\Images\contract1.png" />
 	  <BundleResource Include="Resources\Images\image2.png" />
 	  <BundleResource Include="Resources\Images\menu.png" />
+	  <BundleResource Include="Resources\Images\avatar.png" />
+	  <BundleResource Include="Resources\Images\iconuser.png" />
+	  <BundleResource Include="Resources\Images\iconmobile.png" />
+	  <BundleResource Include="Resources\Images\iconprofile.png" />
+	  <BundleResource Include="Resources\Images\copy.png" />
+	  <BundleResource Include="Resources\Images\back.png" />
+	  <BundleResource Include="Resources\Images\notification.png" />
 	</ItemGroup>
 </Project>
