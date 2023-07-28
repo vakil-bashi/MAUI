@@ -81,6 +81,9 @@
 	  <None Remove="Resources\Images\copy.png" />
 	  <None Remove="Resources\Images\arrow-right.png" />
 	  <None Remove="Resources\Images\notification.png" />
+	  <None Remove="Resources\Images\Ellipse.png" />
+	  <None Remove="Resources\Images\user-minus.png" />
+	  <None Remove="Resources\Images\lock-slash.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -110,5 +113,8 @@
 	  <BundleResource Include="Resources\Images\copy.png" />
 	  <BundleResource Include="Resources\Images\back.png" />
 	  <BundleResource Include="Resources\Images\notification.png" />
+	  <BundleResource Include="Resources\Images\ellipse.png" />
+	  <BundleResource Include="Resources\Images\userminus.png" />
+	  <BundleResource Include="Resources\Images\lock.png" />
 	</ItemGroup>
 </Project>

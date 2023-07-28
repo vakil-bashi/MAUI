@@ -27,7 +27,7 @@ public partial class MainPage : ContentPage
     private async void Light_System(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
     {
         //await Navigation.PushAsync(new Views.Products.Light());
-        await Navigation.PushAsync(new Views.Panel.Profile());
+        await Navigation.PushAsync(new Views.Panel.ProfileDetail());
     }
 }
 

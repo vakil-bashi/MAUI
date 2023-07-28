@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="vakilbashi.Views.Panel.ProfileDetail"
+             BackgroundColor="#FBFCFF">
+
+    
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="*, 3*, *" BackgroundColor="#FFFFFF">
+                <Label Grid.Column="1" Text="جزئیات" FontFamily="yekan-R" FontSize="Medium" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                
+                <ImageButton Grid.Column="2" Source="back.png" Aspect="AspectFit" Margin="20" Clicked="back_Clicked"/>
+
+            </Grid>
+
+            <Frame HasShadow="False" BackgroundColor="#ABFFFFFF" CornerRadius="10" Margin="5, 0">
+                <VerticalStackLayout>
+                    <ImageButton
+                        WidthRequest="120"
+                        HeightRequest="120"
+                        CornerRadius="60" 
+                        BackgroundColor="#F8F9FF"
+                        Source="ellipse.png"
+                        Aspect="AspectFit"/>
+
+                    <Grid ColumnDefinitions="7*, *">
+                        <Image
+                                Grid.Column="1"
+                                Margin="5"
+                                Source="iconuser.png"
+                                Aspect="AspectFit"/>
+                        <Label
+                               Grid.Column="0"
+                               Text="نام و نام‌خانوادگی (فارسی)"
+                               FontFamily="yekan-R"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="End"/>
+
+                    </Grid>
+                    <Entry
+                           Placeholder="سبحان شفیعی"
+                           FontFamily="yekan-R"
+                           HorizontalTextAlignment="End"
+                           BackgroundColor="#F8F9FF"
+                           TextColor="#B8B8BD"/>
+
+
+                    <Grid ColumnDefinitions="7*, *">
+                        <Image
+                                Grid.Column="1"
+                                Margin="5"
+                                Source="iconmobile.png"
+                                Aspect="AspectFit"/>
+                        <Label
+                               Grid.Column="0"
+                               Text="شماره موبایل"
+                               FontFamily="yekan-R"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="End"/>
+
+                    </Grid>
+                    <Entry Placeholder="09022802826"
+                           FontFamily="yekan-R"
+                           HorizontalTextAlignment="End"
+                           BackgroundColor="#F8F9FF"
+                           TextColor="#B8B8BD"/>
+
+                    <Label
+                        Text="نقش کاربر"
+                        FontFamily="yekan-R"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="End"/>
+
+                    <Picker x:Name="picker"
+                            Title="کاربر عادی"
+                            HorizontalTextAlignment="End"
+                            BackgroundColor="#F8F9FF"
+                            TextColor="#B8B8BD">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>کاربر عادی</x:String>
+                                    <x:String>وکیل</x:String>
+                                    <x:String>مدیر سیستم</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                    </Picker>
+
+
+                    <Grid ColumnDefinitions="*, *">
+                        <Frame Grid.Column="0" BackgroundColor="#FFF2F6" HasShadow="False" CornerRadius="8" Margin="10, 25" BorderColor="Transparent" HeightRequest="70">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                            </Frame.GestureRecognizers>
+                            <Image Source="lock.png" Aspect="AspectFit" />
+
+                        </Frame>
+
+                         <Frame Grid.Column="1" BackgroundColor="#FFF8E3" HasShadow="False" CornerRadius="8" Margin="10, 25" BorderColor="Transparent" HeightRequest="70">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                            </Frame.GestureRecognizers>
+                            <Image Source="userminus.png" Aspect="AspectFit" />
+
+                        </Frame>
+
+                    </Grid>
+
+                </VerticalStackLayout>
+
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
