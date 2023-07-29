@@ -6,13 +6,13 @@
              BackgroundColor="#FBFCFF">
 
     <ScrollView>
-        <VerticalStackLayout>
-            <Grid ColumnDefinitions="*, 3*, *" BackgroundColor="#FFFFFF">
-                <Label Grid.Column="1" Text="جزئیات" FontFamily="yekan-R" FontSize="Medium" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+        <Grid ColumnDefinitions="*, 4*,*" BackgroundColor="#FFFFFF">
+            <ImageButton Grid.Column="0" Source="serach.png" Aspect="AspectFit" Clicked="" Margin="25"/>
+            
+            <Label Grid.Column="1" Text="لیست کاربران" FontFamily="yekan-R" FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
 
-                <ImageButton Grid.Column="2" Source="back.png" Aspect="AspectFit" Margin="20" Clicked="back_Clicked"/>
+            <ImageButton Grid.Column="2" Source="back.png" Aspect="AspectFit" Clicked="back_Clicked" Margin="25"/>
 
-            </Grid>
-        </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>
