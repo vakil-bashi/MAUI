@@ -6,13 +6,16 @@
              BackgroundColor="#FBFCFF">
 
     <ScrollView>
+        <VerticalStackLayout>
         <Grid ColumnDefinitions="*, 4*,*" BackgroundColor="#FFFFFF">
             <ImageButton Grid.Column="0" Source="serach.png" Aspect="AspectFit" Margin="25"/>
             
             <Label Grid.Column="1" Text="لیست کاربران" FontFamily="yekan-R" FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
 
             <ImageButton Grid.Column="2" Source="back.png" Aspect="AspectFit" Clicked="back_Clicked" Margin="25"/>
-
+            
+        </Grid>
+            
             <Frame BackgroundColor="#ABFFFFFF">
                 <Grid ColumnDefinitions="8*,*">
                     <Label
@@ -30,6 +33,33 @@
                 </Grid>
             </Frame>
 
-        </Grid>
+            <Grid ColumnDefinitions="*,*,6*,*">
+                <Image
+                    Grid.Column="0"
+                    Source="lock.png"
+                    Aspect="AspectFit"
+                    />
+                <Image
+                    Grid.Column="1"
+                    Source="userminus.png"
+                    Aspect="AspectFit"
+                    />
+                <Label
+                    Grid.Column="2"
+                    Text="فاطمه حسین پور صباغ"
+                    FontFamily="yekan-R"
+                    FontSize="Medium"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="End"
+                    />
+                <Image
+                    Grid.Column="3"
+                    Source="ellipse.png"
+                    Aspect="AspectFit"
+                    />
+            </Grid>
+
+        
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
