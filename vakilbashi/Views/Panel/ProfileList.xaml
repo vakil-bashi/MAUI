@@ -13,6 +13,23 @@
 
             <ImageButton Grid.Column="2" Source="back.png" Aspect="AspectFit" Clicked="back_Clicked" Margin="25"/>
 
+            <Frame BackgroundColor="#ABFFFFFF">
+                <Grid ColumnDefinitions="8*,*">
+                    <Label
+                        Grid.Column="0"
+                        Text="مرتب سازی"
+                        FontFamily="yekan-R"
+                        HorizontalTextAlignment="End"
+                        VerticalTextAlignment="Center"
+                        />
+                    <Image
+                        Grid.Column="1"
+                        Source="sort.png"
+                        Aspect="AspectFit"
+                        />
+                </Grid>
+            </Frame>
+
         </Grid>
     </ScrollView>
 </ContentPage>
