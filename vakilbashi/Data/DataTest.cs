@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace vakilbashi.Data
 {
-    class DataTest
+    public class DataTest
     {
+        public static string GetLocalPath(string filename)
+        {
+            return System.IO.Path.Combine(FileSystem.AppDataDirectory, filename);
+        }
     }
 }
