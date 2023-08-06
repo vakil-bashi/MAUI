@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using vakilbashi.Data;
 
 namespace vakilbashi;
 
@@ -16,8 +15,6 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-		string dbPath = DataTest.GetLocalPath("news.db3");
-
 
 #if DEBUG
 		builder.Logging.AddDebug();
@@ -26,4 +23,3 @@ public static class MauiProgram
 		return builder.Build();
 	}
 }
-

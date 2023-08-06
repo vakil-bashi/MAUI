@@ -6,60 +6,60 @@
              BackgroundColor="#FBFCFF">
 
     <ScrollView>
-        <VerticalStackLayout>
-        <Grid ColumnDefinitions="*, 4*,*" BackgroundColor="#FFFFFF">
-            <ImageButton Grid.Column="0" Source="serach.png" Aspect="AspectFit" Margin="25"/>
-            
-            <Label Grid.Column="1" Text="لیست کاربران" FontFamily="yekan-R" FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+        <VerticalStackLayout Spacing="20">
+            <StackLayout BackgroundColor="#FFFFFF" Margin="0,20,0,0" HorizontalOptions="FillAndExpand"
+                         Orientation="Horizontal">
+                <ImageButton Source="search.png" Aspect="AspectFit" HeightRequest="15"/>
+                <Label Text="لیست کاربران" FontFamily="yekan-R" FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="End"
+                       HorizontalOptions="FillAndExpand"/>
+                <ImageButton Source="back.png" Aspect="AspectFit" Clicked="back_Clicked" HeightRequest="5" WidthRequest="5"/>
+            </StackLayout>
 
-            <ImageButton Grid.Column="2" Source="back.png" Aspect="AspectFit" Clicked="back_Clicked" Margin="25"/>
-            
-        </Grid>
-            
-            <Frame BackgroundColor="#ABFFFFFF">
-                <Grid ColumnDefinitions="8*,*">
-                    <Label
-                        Grid.Column="0"
-                        Text="مرتب سازی"
+            <HorizontalStackLayout FlowDirection="RightToLeft"
+                                       BackgroundColor="#F6F7FA"
+                                       Spacing="10">
+                <Image Source="sort.png"
+                       HeightRequest="30"
+                       WidthRequest="30"
+                       Aspect="AspectFit"/>
+                <Label Text="مرتب سازی"
                         FontFamily="yekan-R"
                         HorizontalTextAlignment="End"
-                        VerticalTextAlignment="Center"
-                        />
-                    <Image
-                        Grid.Column="1"
-                        Source="sort.png"
-                        Aspect="AspectFit"
-                        />
-                </Grid>
-            </Frame>
-
-            <Grid ColumnDefinitions="*,*,6*,*">
-                <Image
-                    Grid.Column="0"
-                    Source="lock.png"
+                        VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <Frame Padding="0"
+                   BackgroundColor="Gray"
+                   CornerRadius="10"
+                   Margin="10,0">
+                <StackLayout Orientation="Horizontal"
+                         Spacing="10"
+                         Margin="10,5">
+                <Image Source="lock.png"
                     Aspect="AspectFit"
-                    />
-                <Image
-                    Grid.Column="1"
-                    Source="userminus.png"
+                       HeightRequest="40"
+                       WidthRequest="40"/>
+                
+                <Image Source="userminus.png"
                     Aspect="AspectFit"
-                    />
-                <Label
-                    Grid.Column="2"
-                    Text="فاطمه حسین پور صباغ"
+                       HeightRequest="40"
+                       WidthRequest="40"/>
+                
+                <Label Text="فاطمه حسین پور صباغ"
                     FontFamily="yekan-R"
                     FontSize="Medium"
+                       HorizontalOptions="FillAndExpand"
                     VerticalTextAlignment="Center"
-                    HorizontalTextAlignment="End"
-                    />
-                <Image
-                    Grid.Column="3"
-                    Source="ellipse.png"
-                    Aspect="AspectFit"
-                    />
-            </Grid>
+                    HorizontalTextAlignment="End"/>
+                
+                <Image Source="ellipse.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                    Aspect="AspectFit"/>
+            </StackLayout>
+            </Frame>
+                
 
-        
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

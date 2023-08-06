@@ -24,10 +24,10 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private async void Light_System(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
+    private async void Light_System(System.Object sender, EventArgs e)
     {
         //await Navigation.PushAsync(new Views.Products.Light());
-        await Navigation.PushAsync(new Views.Panel.ProfileDetail());
+        await Navigation.PushAsync(new Views.Panel.ProfileList());
     }
 }
 

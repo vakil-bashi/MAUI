@@ -58,6 +58,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\sort.png" />
 	  <None Remove="Views\" />
 	  <None Remove="Resources\Images\search.png" />
 	  <None Remove="Resources\Images\certificate.png" />

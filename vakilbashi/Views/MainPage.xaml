@@ -11,8 +11,7 @@
             VerticalOptions="Center">
 
             <Grid ColumnDefinitions="*, 1.1*" >
-                <ImageButton
-                    Grid.Column="0"
+                <ImageButton Grid.Column="0"
                     Source="vakilbashi.png"
                     Aspect="AspectFit"
                     Clicked="Logo_Clicked"/>
@@ -24,35 +23,27 @@
                     Padding="15"
                     HorizontalOptions="End"
                     VerticalOptions="CenterAndExpand"
-                    />
-
+                    Clicked="Light_System"/>
             </Grid>
-
 
             <Frame Padding="0" BorderColor="#EFEFEF" BackgroundColor="#F8F8F8" HeightRequest="60">
               <Grid ColumnDefinitions="6*, *" BackgroundColor="Transparent">
-                <Entry
-                    Grid.Column="0"
+                <Entry Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Placeholder="لطفا موضوع مورد نظر را وارد کنید..."
                     HorizontalTextAlignment="Center"
                     FontFamily="yekan-R.ttf"
-                    FontAttributes="Bold"
-                />
+                    FontAttributes="Bold"/>
                 <ImageButton Grid.Column="1"
                              Source="search.png"
                              Aspect="AspectFit"
                              Margin="10"
-                             BackgroundColor="Transparent"
-                             />
+                             BackgroundColor="Transparent"/>
               </Grid>
-
             </Frame>
 
-            <Frame  Padding="5" HeightRequest="200" CornerRadius="15" BackgroundColor="#F8F8F8">
-
+            <Frame Padding="5" HeightRequest="200" CornerRadius="15" BackgroundColor="#F8F8F8">
                 <Grid RowDefinitions="*, *, 2*" ColumnDefinitions="*, 7*, 2*" >
-
                     <Image Grid.Column="0"
                            Grid.Row="2"
                            Source="glossy.png"
@@ -66,18 +57,14 @@
                            FontSize="Large"
                            FontFamily="yekan-R.ttf"
                            HorizontalTextAlignment="Center"
-                           VerticalTextAlignment="Center">
-                    </Label>
-             
+                           VerticalTextAlignment="Center"/>
+
                     <Image Grid.Column="2"
                            Grid.Row="0"
                            Grid.RowSpan="2"
                            Source="certificate.png"
                            Aspect="AspectFit"/>
-
                 </Grid>
-
-
             </Frame>
 
             <Label Text="پکیج های آموزشی وکیل‌باشی"
@@ -89,48 +76,38 @@
                    FontSize="Header"/>
 
             <Grid ColumnDefinitions="*, *, *" RowDefinitions="*, *" RowSpacing="20" ColumnSpacing="20">
-
                 <Grid Grid.Row="0" Grid.Column="0" RowDefinitions="1.3*, *" Padding="5">
-                    <Image Grid.Row="0" Source="customize.png" Aspect="AspectFit"></Image>
+                    <Image Grid.Row="0" Source="customize.png" Aspect="AspectFit"/>
                     <Label Grid.Row="1" Text="خدمات پیشرفته" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-
                 </Grid>
 
                 <Grid Grid.Row="0" Grid.Column="1" RowDefinitions="1.3*, *" Padding="5">
-
-                    <Image Grid.Row="0" Source="forms.png" Aspect="AspectFit"></Image>
+                    <Image Grid.Row="0" Source="forms.png" Aspect="AspectFit"/>
                     <Label Grid.Row="1" Text="فرم های قضائی" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                 </Grid>
 
                 <Grid Grid.Row="0" Grid.Column="2" RowDefinitions="1.3*, *" Padding="5">
                     <Grid.GestureRecognizers>
                          <TapGestureRecognizer Tapped="Light_System" />
-
                     </Grid.GestureRecognizers>
-                   <Image Grid.Row="0" Source="light.png" Aspect="AspectFit"></Image>
+                    <Image Grid.Row="0" Source="light.png" Aspect="AspectFit"/>
                     <Label Grid.Row="1" Text="سامانه چراغ" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-
                 </Grid>
 
                 <Grid Grid.Row="1" Grid.Column="0" RowDefinitions="1.3*, *" Padding="5">
-
-                    <Image Grid.Row="0" Source="chat.png" Aspect="AspectFit"></Image>
+                    <Image Grid.Row="0" Source="chat.png" Aspect="AspectFit"/>
                     <Label Grid.Row="1" Text="مشاوره آنلاین" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                 </Grid>
 
                 <Grid Grid.Row="1" Grid.Column="1" RowDefinitions="1.3*, *" Padding="5">
-
-                  <Image Grid.Row="0" Source="videos.png" Aspect="AspectFit"></Image>
+                    <Image Grid.Row="0" Source="videos.png" Aspect="AspectFit"/>
                     <Label Grid.Row="1" Text="آموزش های تصویری" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                 </Grid>
 
                 <Grid Grid.Row="1" Grid.Column="2" RowDefinitions="1.3*, *" Padding="5">
-
                    <Image Grid.Row="0" Source="contracts.png" Aspect="AspectFit"></Image>
                     <Label Grid.Row="1" Text="قرارداد ها" FontFamily="yekan-R.ttf" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                 </Grid>
-
-
             </Grid>
 
             <Label Text="چراغ"
@@ -146,15 +123,10 @@
                    TextColor="#001334"
                    FontFamily="yekan-R.ttf"
                    HorizontalTextAlignment="End"
-                   TextType="Html"
-            />
-
-
-            <Image
-                Margin="0, -100, 0, 0"
+                   TextType="Html"/>
+            <Image Margin="0, -100, 0, 0"
                 Source="contract1.png"
-                Aspect="AspectFit"
-                />
+                Aspect="AspectFit"/>
 
             <Label Text="،تسا کیفارگسارد هس و تصش رد یدایز یاهباتک ،دشاب یم
 هک نانچنآرطس و نوتس رد هلجم و همانزور هکلب نوتم و اهرگپاچ
@@ -164,21 +136,14 @@
                    FontSize="Caption"
                    TextColor="#50505299"
                    FontFamily="yekan-R.ttf"
-                   HorizontalTextAlignment="End"
-                   />
+                   HorizontalTextAlignment="End"/>
 
             <Grid ColumnDefinitions="*, *, *" >
-
                 <Button Grid.Column="2"
                         Text="بیشتر بدانید"
                         FontFamily="yekan-R.ttf"
-                        BackgroundColor="#414F91"
-                        />
-
+                        BackgroundColor="#414F91"/>
             </Grid>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
-
